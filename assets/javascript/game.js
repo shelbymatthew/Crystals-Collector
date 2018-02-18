@@ -4,7 +4,7 @@ var crystalTwo = 0;
 var crystalThree = 0;
 var crystalFour = 0;
 var playerTotal = 0;
-var computerGuess = 0;
+var computerGuess;
 var wins = 0;
 var losses = 0;
 
@@ -21,6 +21,13 @@ function startGame(){
     crystalThree = Math.floor(Math.random()*12 + 1);
     crystalFour = Math.floor(Math.random()*12 + 1);
     computerGuess = Math.floor(Math.random()*119 + 1);
+    $("#computerGuess").html=(computerGuess);
+    playerTotal = 0;
+    if (computerGuess === playerTotal){
+        alert("win");
+        } else if (computerGuess < playerTotal){
+            alert("lose");
+        }
 
 
     //tests
@@ -31,12 +38,91 @@ function startGame(){
     console.log(computerGuess)
     
 
+
+
+// function playerGuess(){
+    $("#computerGuess").text(computerGuess);
+    // $("#wins").text(wins);
+    // $("#losses").text(losses);
+    $("#crystalOne").on("click", function() {
+        playerTotal = crystalOne + playerTotal;
+        console.log("pt?" + playerTotal);
+        $("#totalScore").text(playerTotal);
+        if (computerGuess == playerTotal){
+            alert("win");
+            wins++;
+            $("#wins").text("Wins: " + wins);
+            startGame();
+            } else if (computerGuess < playerTotal){
+                alert("lose");
+                losses++;
+                $("#losses").text("Losses: " + losses);
+                startGame();
+            }
+    });
+        $("#crystalTwo").on("click", function() {
+        playerTotal = crystalTwo + playerTotal;
+        console.log("pt?" + playerTotal);
+        $("#totalScore").text(playerTotal);
+        if (computerGuess == playerTotal){
+            alert("win");
+            } else if (computerGuess < playerTotal){
+                alert("lose");
+            }
+    });
+        $("#crystalThree").on("click", function() {
+        playerTotal = crystalThree + playerTotal;
+        console.log("pt?" + playerTotal);
+        $("#totalScore").text(playerTotal);
+        if (computerGuess == playerTotal){
+            alert("win");
+            } else if (computerGuess < playerTotal){
+                alert("lose");
+            }
+    });
+        $("#crystalFour").on("click", function() {
+        playerTotal = crystalFour + playerTotal;
+        console.log("pt?" + playerTotal);
+        $("#totalScore").text(playerTotal);
+        if (computerGuess == playerTotal){
+            alert("win");
+            } else if (computerGuess < playerTotal){
+                alert("lose");
+            }
+   });
+//    if (computerGuess == playerTotal){
+//     alert("win");
+//     } else if (computerGuess < playerTotal){
+//         alert("lose");
+    // }
 }
 
-function playerGuess(){
-
-}
+// }
 
 //Game logic
-startGame()
+startGame();
+// playerGuess();
 
+
+
+
+
+// if (playerTotal == computerGuess){
+//     alert("win");
+//     } else if (playerTotal > computerGuess){
+//         alert("lose");
+//     }
+
+
+
+
+ //     if($("#crystalOne").on("click"), function()){
+    //     playerTotal = crystalOne + playerTotal;
+    //     console.log("pt?" + playerTotal)
+    // } else if (crystalTwo = true){
+    //     playerTotal = crystalTwo + playerTotal;
+    // } else if (crystalThree){
+    //     playerTotal = crystalThree + playerTotal;
+    // } else if (crystalFour){
+    //     playerTotal = crystalFour + playerTotal;
+    // }
