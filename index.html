@@ -8,17 +8,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+        crossorigin="anonymous">  
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
     <title>Crystals Collector</title>
 </head>
 
 <body>
+    <div class="bg"></div>
     <!-- As a heading -->
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-brand mb-0 h1">
-            <h1>Crystals Collector</h1>
+            <h1>Tetris Tetriminos Mystery Total Up Challange</h1>
         </span>
     </nav>
     <div class="container">
@@ -31,7 +33,8 @@
         </div>
         <div class="row">
             <div class="col-6">
-               <p id="computerGuess">0</p>
+                <p>Match this number without going over:</p>
+                <p id="computerGuess">0</p>
             </div>
             <div class="col-6">
                 <p id="wins">Wins:0</p>
@@ -39,29 +42,37 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li class="crystal" id="crystalOne">Crystal 1</li>
-                    <li class="crystal" id="crystalTwo">Crystal 2</li>
-                    <li class="crystal" id="crystalThree">Crystal 3</li>
-                    <li class="crystal" id="crystalFour">Crystal 4</li>
+            <div class="col-6" id="tetris">
+                <ul id="tetris">
+                    <li class="crystal" id="crystalOne">
+                        <img src="./assets/images/Tetris_J.svg.png" alt="Tetris Piece L Shape" width="50">
+                    </li>
+                    <li class="crystal" id="crystalTwo">
+                        <img src="./assets/images/Tetris_O.svg.png" alt="Tetris Piece O Shape" width="40">
+                    </li>
+                    <li class="crystal" id="crystalThree">
+                        <img src="./assets/images/Tetris_S.svg.png" alt="Tetris Piece S Shape" width="50">
+                    </li>
+                    <li class="crystal" id="crystalFour">
+                        <img src="./assets/images/Tetris_T.svg.png" alt="Tetris Piece T Shape" width="50">
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <p>Total score:</p>
-                <p id="totalScore">0</p>
+                <p id="playerScore">0</p>
             </div>
         </div>
-    
-    
-    
-    
-    
-    
-    </div>
 
+
+
+
+
+
+    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,0 +1,30 @@
+
+html {
+    background-color: transparent;
+}
+body {
+    background-color: transparent;
+    font-family: 'Righteous', cursive;
+}
+.container {
+    background-color: transparent;
+    /* The image used */
+    background-image: url('./assets/images/background.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tetris {
+    list-style: none;
+    display: inline-block;
+}
+
+.crystal {
+    display: inline-block;
+}
