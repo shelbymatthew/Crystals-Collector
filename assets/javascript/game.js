@@ -1,5 +1,5 @@
 
-
+//Creating global variables
 var crystalOne = 0;
 var crystalTwo = 0;
 var crystalThree = 0;
@@ -9,10 +9,10 @@ var computerGuess;
 var wins = 0;
 var losses = 0;
 
+//Calling generateNumbers fucntion to start the game
 generateNumbers();
 
-$("#computerGuess").text(computerGuess);
-
+//Receiving player input, adding the number assoiasiated with the crystal clicked, and running the checkWin funciton
 $(".crystal").on("click", function () {
    switch (this.id){
 
@@ -34,11 +34,11 @@ $(".crystal").on("click", function () {
 }
 });
 
-if (computerGuess == playerTotal){
-    alert("win!")
-} else if (computerGuess < playerTotal){
-    alert("lose!");
-}
+// if (computerGuess == playerTotal){
+//     alert("win!")
+// } else if (computerGuess < playerTotal){
+//     alert("lose!");
+// }
 
 function generateNumbers(){
     crystalOne = Math.floor(Math.random()*12 + 1);
@@ -46,6 +46,7 @@ function generateNumbers(){
     crystalThree = Math.floor(Math.random()*12 + 1);
     crystalFour = Math.floor(Math.random()*12 + 1);
     computerGuess = Math.floor(Math.random()*100 + 19);
+    $("#computerGuess").text(computerGuess);
     }
 
 function resetGame(){
