@@ -34,12 +34,7 @@ $(".crystal").on("click", function () {
 }
 });
 
-// if (computerGuess == playerTotal){
-//     alert("win!")
-// } else if (computerGuess < playerTotal){
-//     alert("lose!");
-// }
-
+//function generates numbers for the start of the game, and inserts the computer guess for the user to see.
 function generateNumbers(){
     crystalOne = Math.floor(Math.random()*12 + 1);
     crystalTwo = Math.floor(Math.random()*12 + 1);
@@ -48,14 +43,14 @@ function generateNumbers(){
     computerGuess = Math.floor(Math.random()*100 + 19);
     $("#computerGuess").text(computerGuess);
     }
-
+//Resets game
 function resetGame(){
     generateNumbers();
     playerTotal = 0;
     $("#computerGuess").text(computerGuess);
     $("#playerScore").text(playerTotal);
 }
-
+//Checks for a win, lose, or to keep playing. Resets game when a win or loss happens.
 function checkWin(){
     if (computerGuess == playerTotal){
         alert("win!");

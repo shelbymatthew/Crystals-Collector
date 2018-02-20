@@ -1,7 +1,18 @@
 
 body {
-
     font-family: 'Righteous', cursive;
+    color: rgba(10, 24, 10, 0.79);
+    background-color: #babaae
+}
+
+.bg-light{
+    background-color: #babaae!important;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(37, 37, 142, 0.9)!important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
 }
 
 #tetris {
@@ -12,7 +23,17 @@ body {
 .crystal {
     display: inline-block;
     margin-bottom:10px;
+    filter: grayscale(95%);
 }
 #inst {
-    font-size: 10px;
+    font-size: 14px;
+    margin: 20px 0;
 }
+.container {
+    background-color: rgba(158, 176, 131, 0.858);
+}
+
+#number {
+    margin-bottom: 20px;
+}
+
