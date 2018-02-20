@@ -12,6 +12,7 @@ body {
 .navbar-light .navbar-brand {
     color: rgba(37, 37, 142, 0.9);
     font-family: 'Impact', sans-serif;
+    text-shadow: 1px 1px rgba(101, 113, 101, 0.667);
     
 }
 .navbar-light .navbar-brand i {
