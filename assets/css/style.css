@@ -6,13 +6,17 @@ body {
 }
 
 .bg-light{
-    background-color: #babaae!important;
+    background-color: #babaae !important;
 }
 
 .navbar-light .navbar-brand {
-    color: rgba(37, 37, 142, 0.9)!important;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold !important;
+    color: rgba(37, 37, 142, 0.9);
+    font-family: 'Impact', sans-serif;
+    
+}
+.navbar-light .navbar-brand i {
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
 }
 
 #tetris {
@@ -26,6 +30,7 @@ body {
     display: inline-block;
     margin-bottom:10px;
     filter: grayscale(95%);
+    cursor: pointer;
 }
 #inst {
     font-size: 14px;
